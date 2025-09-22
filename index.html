@@ -6,6 +6,26 @@
     <title>Главная тестовая страница</title>
 </head>
 <body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">Лого</div>
+                <div class="site-title">
+                    <h1>Название сайта</h1>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#links">К списку гиперссылок</a></li>
+                        <li><a href="#table">К таблице</a></li>
+                        <li><a href="#form">К форме</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    
+    <main class="container">
+    <section id="links">
     <h1>Заголовок</h1>
     <ul>
         <li> <a href="http://www.kubsu.ru">КубГУ</a> </li>
@@ -64,9 +84,31 @@
         </li>
 
         <li><a href="ftp://s0195835:pass456@ftp.myserver.com/1/reg.txt">Ссылка на FTP сервер</a></li>
-
     </ul>
+    </section>
 
+    <section id="table">
+        <h2>Таблица 2x2 с объединенными ячейками</h2>
+        <table>
+            <thead>
+                 <tr>
+                    <th>Заголовок 1</th>
+                    <th>Заголовок 2</th>
+                 </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Ячейка 1</td>
+                    <td>Ячейка 2</td>
+                </tr>
+                <tr>
+                    <td colspan="2">Объединенная ячейка</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="form">    
     <form action="index.html" method="POST">
         <label>
             ФИО:<br>
@@ -117,8 +159,10 @@
         <label>
             <input type="submit" value="Сохранить">
         </label>
-    </form>      
+    </form>
+    </section>
 </body>
 </html>
+
 
 
