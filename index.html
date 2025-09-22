@@ -4,22 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Главная тестовая страница</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
         <div class="container">
             <div class="header-content">
-                <div class="logo">Лого</div>
+                <div class="logo">
+                    <a href="images/logo.png"> <img src="images/logo.png" alt="Лого" width="300" height="300"></a>
+                </div>  
                 <div class="site-title">
-                    <h1>Название сайта</h1>
-                </div>
+                    <h1>Тестовый сайт</h1>
+                </div>                
                 <nav>
-                    <ul>
-                        <li><a href="#links">К списку гиперссылок</a></li>
-                        <li><a href="#table">К таблице</a></li>
-                        <li><a href="#form">К форме</a></li>
-                    </ul>
+                        <a href="#links">К списку гиперссылок</a> 
+                        <a href="#table">К таблице</a>
+                        <a href="#form">К форме</a>
                 </nav>
+
+
             </div>
         </div>
     </header>
@@ -76,7 +79,8 @@
 
         <li> <a href="https://www.kubsu.ru/">Ссылка, запрещенная для индексации</a> </li>
 
-        <li> <ol>
+        <li> Нумерованный список ссылок <br>
+            <ol>
                  <li><a href="http://www.kubsu.ru">Title1</a></li>
                  <li><a href="http://www.kubsu.ru">Title2</a></li>
                  <li><a href="http://www.kubsu.ru">Title3</a></li>
@@ -84,31 +88,60 @@
         </li>
 
         <li><a href="ftp://s0195835:pass456@ftp.myserver.com/1/reg.txt">Ссылка на FTP сервер</a></li>
-    </ul>
+    </ul> <br>
     </section>
 
     <section id="table">
-        <h2>Таблица 2x2 с объединенными ячейками</h2>
+        <h2>Таблица 4x6 с объединенными ячейками</h2>
         <table>
             <thead>
-                 <tr>
-                    <th>Заголовок 1</th>
-                    <th>Заголовок 2</th>
-                 </tr>
+                <tr>
+                    <th>Столбец 1</th>
+                    <th>Столбец 2</th>
+                    <th>Столбец 3</th>
+                    <th>Столбец 4</th>
+                </tr>
             </thead>
             <tbody>
                 <tr>
-                    <td>Ячейка 1</td>
-                    <td>Ячейка 2</td>
+                    <td colspan="4">Объединенная ячейка 1</td>
                 </tr>
+                
                 <tr>
-                    <td colspan="2">Объединенная ячейка</td>
+                    <td>Ячейка 2.1</td>
+                    <td>Ячейка 2.2</td>
+                    <td>Ячейка 2.3</td>
+                    <td>Ячейка 2.4</td>
+                </tr>
+                
+                <tr>
+                    <td colspan="2">Объединенная ячейка 3.1</td>
+                    <td colspan="2">Объединенная ячейка 3.2</td>
+                </tr>
+                
+                <tr>
+                    <td>Ячейка 4.1</td>
+                    <td>Ячейка 4.2</td>
+                    <td>Ячейка 4.3</td>
+                    <td>Ячейка 4.4</td>
+                </tr>
+                
+                <tr>
+                    <td>Ячейка 5.1</td>
+                    <td>Ячейка 5.2</td>
+                    <td>Ячейка 5.3</td>
+                    <td>Ячейка 5.4</td>
+                </tr>
+                
+                <tr>
+                    <td colspan="4">Объединенная ячейка 6</td>
                 </tr>
             </tbody>
-        </table>
+        </table> <br>
     </section>
 
-    <section id="form">    
+    <section id="form">
+    <h2>Форма</h2>    
     <form action="index.html" method="POST">
         <label>
             ФИО:<br>
@@ -161,8 +194,16 @@
         </label>
     </form>
     </section>
+
+    <footer id="site-footer">
+        <div class="container">
+            <p>2025. Здесь будет важная информация.</p>
+            <p>Дмитрий Нещадим</p>
+        </div>
+    </footer>
 </body>
 </html>
+
 
 
 
