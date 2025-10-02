@@ -24,6 +24,14 @@ body {
     color: white;
     padding: 15px 0;
     width: 100%;
+    flex-direction: column;
+    display: flex
+}
+
+@media screen and (min-width: 800px) {
+  #site-header {
+    flex-direction: row;
+  }
 }
 
 .header-content {
@@ -42,10 +50,18 @@ body {
     margin:20px 20px;
 }
 
+
 /* Навигация */
 #main-nav ul {
     display: flex;
     list-style: none;
+    flex-direction: column;
+}
+
+@media screen and (min-width: 800px) {
+  #main-nav ul {
+    flex-direction: row;
+  }
 }
 
 #main-nav li {
@@ -184,4 +200,5 @@ input[type="submit"]:hover {
 
 #site-footer p {
     margin-bottom: 5px;
+
 }
