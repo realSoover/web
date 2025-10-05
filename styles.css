@@ -16,28 +16,21 @@ body {
     max-width: 960px;
     margin: 0 auto;
     padding: 0 15px;
+    display: flex;
+    flex-direction: column;
 }
 
 /* Шапка */
-#site-header {
-    background-color: #2c3e50;
-    color: white;
-    padding: 15px 0;
-    width: 100%;
-    flex-direction: column;
-    display: flex
-}
-
-@media screen and (min-width: 800px) {
-  #site-header {
-    flex-direction: row;
-  }
-}
 
 .header-content {
+    background-color: #4e7091;
+    color: white;
+    padding: 15 0;
+    width: 100%;
     display: flex;
-    align-items: center;
+    flex-direction: row;
     justify-content: space-between;
+    align-items: center;
 }
 
 .logo img {
@@ -47,42 +40,45 @@ body {
 
 .site-title h1 {
     font-size: 24px;
-    margin:20px 20px;
+    margin:20 20;
 }
-
 
 /* Навигация */
-#main-nav ul {
+#nav {
     display: flex;
     list-style: none;
-    flex-direction: column;
+    margin-left: 20;
 }
-
-@media screen and (min-width: 800px) {
-  #main-nav ul {
+#nav{
     flex-direction: row;
-  }
+}
+@media (max-width:850px)
+{
+  #nav {
+    flex-direction: column};  
 }
 
-#main-nav li {
-    margin-left: 20px;
+#nav div{
+  margin-right: 100;    
 }
 
-#main-nav a {
+#nav a {
     color: white;
     text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s;
+    transition: color 0.2s;
+  
 }
 
-#main-nav a:hover {
+#nav a:hover {
     color: #3498db;
+    text-decoration: underline;
 }
 
 /* Основная часть */
 main {
     padding: 30px 0;
     min-height: calc(100vh - 140px);
+    display: flex;
 }
 
 section {
@@ -101,20 +97,15 @@ h2 {
 }
 
 /* Список гиперссылок */
+#links {order:1;}
+@media(max-width:850px)
+{
+   #links{order:2;} 
+}
+
 #links ul {
     list-style-type: disc;
     margin-left: 20px;
-    display: flex;
-    flex-direction: column;
-    flex: 2;
-    order: 2;
-}
-
-@media screen and (min-width: 800px) {
-  #links ul {
-    flex: 1;
-    order: 1;
-  }
 }
 
 #links li {
@@ -131,23 +122,16 @@ h2 {
 }
 
 /* Таблица */
-table {
+#table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 15px;
-    display: flex;
-    flex: 1;
-    order: 1;
+    order:2;
 }
 
-@media screen and (min-width: 800px) {
-  #table {
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-    order: 2;
-  }
-}
+@media(max-width:850px)
+{#table{order:1;}}
+
 
 table th, table td {
     border: 1px solid #ddd;
@@ -173,8 +157,9 @@ table tr:hover {
 }
 
 /* Форма */
-form {
+#form {
     max-width: 600px;
+    order:3;
 }
 
 .form-group {
@@ -212,6 +197,13 @@ input[type="submit"]:hover {
     background-color: #2980b9;
 }
 
+/* Порядок */
+@media (max-width: 850px)
+{
+.links1{order: 2;}
+.table1{order: 1;}
+}
+
 /* Подвал сайта */
 #site-footer {
     background-color: #2c3e50;
@@ -223,8 +215,4 @@ input[type="submit"]:hover {
 
 #site-footer p {
     margin-bottom: 5px;
-
 }
-
-
-
