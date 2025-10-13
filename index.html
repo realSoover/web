@@ -8,22 +8,21 @@
 </head>
 <body>
     <header>
-        <div class="header-content">
-            <div class="logo">
-                <a href="images/logo.png"> <img src="images/logo.png" alt="Лого" width="300" height="300"></a>
-            </div>  
-            <div class="site-title">
-                <h1>Тестовый сайт</h1>
-            </div>                
-            <nav id="nav">
-                <div><a href="#links">К списку гиперссылок&nbsp;</a></div>
-                <div><a href="#table">К таблице&nbsp;</a></div>
-                <div><a href="#form">К форме&nbsp;</a></div>
-            </nav>
+        <div class="container/fluid">
+            <div class="row">
+               <div class="col-md-4"> <a href="images/logo.png"> <img src="images/logo.png" alt="Лого" width="300" height="300"> </a></div>
+               <div class="col-md-4"><h1>Тестовый сайт</h1></div>
+               <div class="col-md-4">            
+                   <nav id="nav">
+                   <div><a href="#links">К списку гиперссылок&nbsp;</a></div>
+                   <div><a href="#table">К таблице&nbsp;</a></div>
+                   <div><a href="#form">К форме&nbsp;</a></div>
+                   </nav></div>
+               </div>
         </div>
     </header>
     
-    <main class="container">
+    <div class="container">
     <section id="links">
     <h1>Заголовок</h1>
     <ul>
@@ -199,4 +198,5 @@
     </footer>
 </body>
 </html>
+
 
